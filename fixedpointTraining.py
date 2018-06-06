@@ -204,6 +204,8 @@ class FixedLayerConvNet(torch.nn.Module):
 
 fix_model = FixedLayerConvNet()
 direct_fix_model = FixedLayerConvNet()
+direct_fix_model = direct_fix_model.to(config.device)
+
 PATH = 'training.pt'
 fix_model.load_state_dict(torch.load(PATH))
 direct_fix_model.load_state_dict(torch.load(PATH))

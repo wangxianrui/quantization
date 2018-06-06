@@ -2,12 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c6891515-ecc9-4d52-b7f2-b88c7156fe42" name="Default" comment="">
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/fixedpointTraining.py" beforeDir="false" afterPath="$PROJECT_DIR$/fixedpointTraining.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/loadVGG.py" beforeDir="false" afterPath="$PROJECT_DIR$/loadVGG.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/utee/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/utee/misc.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/utee/quant.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/utee/selector.py" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -22,19 +19,34 @@
     <SUITE FILE_PATH="coverage/pytorch_quantization$test.coverage" NAME="test Coverage Results" MODIFIED="1528256137947" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/pytorch_quantization$fixedpointTraining.coverage" NAME="fixedpointTraining Coverage Results" MODIFIED="1528267957396" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
+  <component name="DatabaseView">
+    <option name="SHOW_INTERMEDIATE" value="true" />
+    <option name="GROUP_DATA_SOURCES" value="true" />
+    <option name="GROUP_SCHEMA" value="true" />
+    <option name="GROUP_CONTENTS" value="false" />
+    <option name="SORT_POSITIONED" value="false" />
+    <option name="SHOW_EMPTY_GROUPS" value="false" />
+    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
+    <option name="HIDDEN_KINDS">
+      <set />
+    </option>
+    <expand />
+    <select />
+  </component>
   <component name="FileEditorManager">
     <leaf>
       <file leaf-file-name="fixedpointTraining.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/fixedpointTraining.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="505">
-              <caret line="207" column="36" lean-forward="true" selection-start-line="207" selection-start-column="36" selection-end-line="207" selection-end-column="36" />
+            <state relative-caret-position="216">
+              <caret line="207" lean-forward="true" selection-start-line="207" selection-end-line="207" />
               <folding>
                 <element signature="e#0#11#0" expanded="true" />
                 <element signature="e#62#193#0" />
                 <element signature="e#1217#1281#0" />
                 <element signature="e#1320#1367#0" />
                 <element signature="e#1350#1367#0" />
+                <element signature="e#5927#6876#0" />
               </folding>
             </state>
           </provider>
@@ -94,6 +106,7 @@
         <option value="$PROJECT_DIR$/loadVGG.py" />
         <option value="$PROJECT_DIR$/test.py" />
         <option value="$PROJECT_DIR$/config.py" />
+        <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/fixedpointTraining.py" />
       </list>
     </option>
@@ -370,10 +383,10 @@
       <window_info anchor="bottom" id="Run" order="2" weight="0.3683106" />
       <window_info anchor="bottom" id="Version Control" />
       <window_info anchor="bottom" id="Python Console" />
-      <window_info anchor="bottom" id="Terminal" weight="0.32948583" />
+      <window_info anchor="bottom" id="Terminal" visible="true" weight="0.32948583" />
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.17243274" />
       <window_info anchor="bottom" id="Docker" show_stripe_button="false" />
-      <window_info anchor="right" id="Database" />
+      <window_info anchor="right" id="Database" weight="0.3294893" />
       <window_info anchor="right" id="SciView" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
@@ -601,16 +614,24 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="44">
+          <caret line="2" column="11" lean-forward="true" selection-start-line="2" selection-start-column="11" selection-end-line="2" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/fixedpointTraining.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="505">
-          <caret line="207" column="36" lean-forward="true" selection-start-line="207" selection-start-column="36" selection-end-line="207" selection-end-column="36" />
+        <state relative-caret-position="216">
+          <caret line="207" lean-forward="true" selection-start-line="207" selection-end-line="207" />
           <folding>
             <element signature="e#0#11#0" expanded="true" />
             <element signature="e#62#193#0" />
             <element signature="e#1217#1281#0" />
             <element signature="e#1320#1367#0" />
             <element signature="e#1350#1367#0" />
+            <element signature="e#5927#6876#0" />
           </folding>
         </state>
       </provider>
