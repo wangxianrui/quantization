@@ -99,14 +99,14 @@ class ExpConvNet(torch.nn.Module):
         self.fc1 = torch.nn.Linear(64 * 8 * 8, 512)
         self.fc2 = torch.nn.Linear(512, 10)
 
-        torch.nn.init.kaiming_normal_(self.conv1.weight)
-        torch.nn.init.constant_(self.conv1.bias, 0)
-        torch.nn.init.kaiming_normal_(self.conv2.weight)
-        torch.nn.init.constant_(self.conv2.bias, 0)
-        torch.nn.init.kaiming_normal_(self.fc1.weight)
-        torch.nn.init.kaiming_normal_(self.fc2.weight)
-        torch.nn.init.constant_(self.fc1.bias, 0)
-        torch.nn.init.constant_(self.fc2.bias, 0)
+        # torch.nn.init.kaiming_normal_(self.conv1.weight)
+        # torch.nn.init.constant_(self.conv1.bias, 0)
+        # torch.nn.init.kaiming_normal_(self.conv2.weight)
+        # torch.nn.init.constant_(self.conv2.bias, 0)
+        # torch.nn.init.kaiming_normal_(self.fc1.weight)
+        # torch.nn.init.kaiming_normal_(self.fc2.weight)
+        # torch.nn.init.constant_(self.fc1.bias, 0)
+        # torch.nn.init.constant_(self.fc2.bias, 0)
 
     def forward(self, x):
         x = self.conv1(x)

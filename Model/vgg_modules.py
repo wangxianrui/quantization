@@ -12,10 +12,6 @@ __all__ = [
 
 
 class VGG(nn.Module):
-    '''
-    VGG model 
-    '''
-
     def __init__(self, features):
         super(VGG, self).__init__()
         self.features = features
@@ -28,8 +24,7 @@ class VGG(nn.Module):
             (str(idx + 4), nn.Linear(512, 512)),
             (str(idx + 5), nn.ReLU(True)),
             (str(idx + 6), nn.Linear(512, 10))
-        ])
-        )
+        ]))
         # Initialize weights
         for m in self.modules():
             if isinstance(m, nn.Conv2d):
