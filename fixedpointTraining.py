@@ -7,7 +7,7 @@ import torch.utils.data
 import torch.utils.data.sampler
 import torchvision
 
-NUM_TRAIN = 49000
+import config
 
 transform = torchvision.transforms.Compose([
     torchvision.transforms.ToTensor(),
@@ -18,19 +18,15 @@ transform = torchvision.transforms.Compose([
 cifar10_train = torchvision.datasets.CIFAR10('~/DATA/cifar', train=True, download=True, transform=transform)
 loader_train = torch.utils.data.DataLoader(cifar10_train, batch_size=64,
                                            sampler=torch.utils.data.sampler.SubsetRandomSampler(
-                                               [x for x in range(NUM_TRAIN)]))
+                                               [x for x in range(config.NUM_TRAIN)]))
 
 cifar10_val = torchvision.datasets.CIFAR10('~/DATA/cifar', train=True, download=True, transform=transform)
 loader_val = torch.utils.data.DataLoader(cifar10_val, batch_size=64,
                                          sampler=torch.utils.data.sampler.SubsetRandomSampler(
-                                             [x for x in range(NUM_TRAIN, 50000)]))
+                                             [x for x in range(config.NUM_TRAIN, 50000)]))
 # 测试集
 cifar10_test = torchvision.datasets.CIFAR10('~/DATA/cifar', train=False, download=True, transform=transform)
 loader_test = torch.utils.data.DataLoader(cifar10_test, batch_size=64)
-
-# device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
-device = torch.device('cpu')
-print_every = 100
 
 
 def flatten(x):
@@ -54,8 +50,8 @@ def check_accuracy_part34(loader, model):
     model.eval()  # set model to evaluation mode
     with torch.no_grad():
         for x, y in loader:
-            x = x.to(device=device)
-            y = y.to(device=device)
+            x = x.to(device=config.device)
+            y = y.to(device=config.device)
             scores = model(x)
             _, preds = scores.max(1)
             num_correct += (preds == y).sum()
@@ -75,14 +71,16 @@ def train_part34(model, optimizer, epochs=1):
 
     Returns: Nothing, but prints model accuracies during training.
     """
-    model = model.to(device=device)  # move the model parameters to CPU/GPU
+    model = model.to(device=config.device)  # move the model parameters to CPU/GPU
+    if config.device.type == 'cuda':
+        model = torch.nn.DataParallel(model)
     model.train()  # put model to training mode
     t_begin = time.time()
     for e in range(epochs):
         for t, (x, y) in enumerate(loader_train):
 
-            x = x.to(device=device)
-            y = y.to(device=device)
+            x = x.to(device=config.device)
+            y = y.to(device=config.device)
 
             scores = model(x)
             # criterion
@@ -92,7 +90,7 @@ def train_part34(model, optimizer, epochs=1):
             loss.backward()
             optimizer.step()
 
-            if t % print_every == 0:
+            if t % config.print_every == 0:
                 t_elapse = time.time() - t_begin
                 print('Elapsed %.4f s, Epoch %d,  Iteration %d, loss = %.4f' % (t_elapse, e, t, loss.item()))
                 check_accuracy_part34(loader_val, model)
