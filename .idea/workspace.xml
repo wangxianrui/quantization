@@ -20,33 +20,42 @@
     <SUITE FILE_PATH="coverage/pytorch_quantization$config.coverage" NAME="config Coverage Results" MODIFIED="1528267500740" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/pytorch_quantization$loadVGG.coverage" NAME="loadVGG Coverage Results" MODIFIED="1528255374313" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/pytorch_quantization$test.coverage" NAME="test Coverage Results" MODIFIED="1528256137947" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/pytorch_quantization$fixedpointTraining.coverage" NAME="fixedpointTraining Coverage Results" MODIFIED="1528266931326" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/pytorch_quantization$fixedpointTraining.coverage" NAME="fixedpointTraining Coverage Results" MODIFIED="1528267957396" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="fixedpointTraining.py" pinned="false" current-in-tab="false">
+      <file leaf-file-name="fixedpointTraining.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/fixedpointTraining.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="330">
-              <caret line="30" selection-start-line="30" selection-end-line="31" selection-end-column="28" />
+            <state relative-caret-position="505">
+              <caret line="207" column="36" lean-forward="true" selection-start-line="207" selection-start-column="36" selection-end-line="207" selection-end-column="36" />
               <folding>
                 <element signature="e#0#11#0" expanded="true" />
                 <element signature="e#62#193#0" />
                 <element signature="e#1217#1281#0" />
                 <element signature="e#1320#1367#0" />
                 <element signature="e#1350#1367#0" />
-                <element signature="e#2145#2505#1" />
-                <element signature="e#3114#3337#0" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="config.py" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/config.py">
+      <file leaf-file-name="loadVGG.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/loadVGG.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="110">
-              <caret line="5" lean-forward="true" selection-start-line="5" selection-end-line="5" />
+            <state relative-caret-position="263">
+              <caret line="109" column="29" selection-start-line="109" selection-start-column="10" selection-end-line="109" selection-end-column="29" />
+              <folding>
+                <element signature="e#225#356#0" />
+                <element signature="e#1380#1444#0" />
+                <element signature="e#1483#1530#0" />
+                <element signature="e#1513#1530#0" />
+                <element signature="e#1579#2255#0" />
+                <element signature="e#1837#2255#0" />
+                <element signature="e#1869#2124#0" />
+                <element signature="e#2308#2668#1" />
+                <element signature="e#3277#3500#0" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -84,8 +93,8 @@
         <option value="$PROJECT_DIR$/Model/quantization.py" />
         <option value="$PROJECT_DIR$/loadVGG.py" />
         <option value="$PROJECT_DIR$/test.py" />
-        <option value="$PROJECT_DIR$/fixedpointTraining.py" />
         <option value="$PROJECT_DIR$/config.py" />
+        <option value="$PROJECT_DIR$/fixedpointTraining.py" />
       </list>
     </option>
   </component>
@@ -96,7 +105,7 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-1867" />
+    <option name="x" value="53" />
     <option name="y" value="-4" />
     <option name="width" value="1867" />
     <option name="height" value="1084" />
@@ -211,6 +220,11 @@
               <item name="Root" type="cbb8eebc:String" user="Root" />
               <item name="pytorch_quantization" type="cbb8eebc:String" user="pytorch_quantization" />
             </path>
+            <path>
+              <item name="Root" type="cbb8eebc:String" user="Root" />
+              <item name="pytorch_quantization" type="cbb8eebc:String" user="pytorch_quantization" />
+              <item name="Model" type="cbb8eebc:String" user="Model" />
+            </path>
           </expand>
           <select />
         </subPane>
@@ -241,7 +255,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.config">
+  <component name="RunManager" selected="Python.fixedpointTraining">
     <configuration name="config" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="pytorch_quantization" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -326,8 +340,8 @@
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.config" />
         <item itemvalue="Python.fixedpointTraining" />
+        <item itemvalue="Python.config" />
         <item itemvalue="Python.test" />
         <item itemvalue="Python.loadVGG" />
       </list>
@@ -353,11 +367,11 @@
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Event Log" side_tool="true" />
       <window_info anchor="bottom" id="Database Changes" show_stripe_button="false" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.3683106" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.3683106" />
       <window_info anchor="bottom" id="Version Control" />
       <window_info anchor="bottom" id="Python Console" />
       <window_info anchor="bottom" id="Terminal" weight="0.32948583" />
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.17243274" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.17243274" />
       <window_info anchor="bottom" id="Docker" show_stripe_button="false" />
       <window_info anchor="right" id="Database" />
       <window_info anchor="right" id="SciView" />
@@ -401,17 +415,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="294">
           <caret line="287" lean-forward="true" selection-start-line="287" selection-end-line="287" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Model/vgg.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="154">
-          <caret line="7" column="11" lean-forward="true" selection-start-line="7" selection-start-column="11" selection-end-line="7" selection-end-column="11" />
-          <folding>
-            <element signature="e#60#71#0" expanded="true" />
-            <element signature="e#266#1061#0" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -462,27 +465,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Model/quantization.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="418">
-          <caret line="19" column="56" lean-forward="true" selection-start-line="19" selection-start-column="56" selection-end-line="19" selection-end-column="56" />
-          <folding>
-            <element signature="e#0#12#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$USER_HOME$/anaconda3/envs/pytorch/lib/python3.5/site-packages/torch/nn/modules/loss.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="858">
           <caret line="372" lean-forward="true" selection-start-line="371" selection-start-column="17" selection-end-line="372" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Model/vgg_modules.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="22">
-          <caret line="4" column="35" selection-start-line="4" selection-start-column="24" selection-end-line="4" selection-end-column="35" />
         </state>
       </provider>
     </entry>
@@ -556,10 +542,24 @@
     <entry file="file://$PROJECT_DIR$/test.py">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
+    <entry file="file://$USER_HOME$/anaconda3/envs/pytorch/lib/python3.5/site-packages/torch/nn/functional.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="191">
+          <caret line="1331" column="50" selection-start-line="1331" selection-start-column="44" selection-end-line="1331" selection-end-column="50" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="66">
+          <caret line="3" selection-start-line="3" selection-end-line="3" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/loadVGG.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-655">
-          <caret selection-end-line="8" />
+        <state relative-caret-position="263">
+          <caret line="109" column="29" selection-start-line="109" selection-start-column="10" selection-end-line="109" selection-end-column="29" />
           <folding>
             <element signature="e#225#356#0" />
             <element signature="e#1380#1444#0" />
@@ -574,33 +574,44 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$USER_HOME$/anaconda3/envs/pytorch/lib/python3.5/site-packages/torch/nn/functional.py">
+    <entry file="file://$PROJECT_DIR$/Model/quantization.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="191">
-          <caret line="1331" column="50" selection-start-line="1331" selection-start-column="44" selection-end-line="1331" selection-end-column="50" />
+        <state relative-caret-position="418">
+          <caret line="19" column="56" lean-forward="true" selection-start-line="19" selection-start-column="56" selection-end-line="19" selection-end-column="56" />
+          <folding>
+            <element signature="e#0#12#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Model/vgg.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="154">
+          <caret line="7" column="11" lean-forward="true" selection-start-line="7" selection-start-column="11" selection-end-line="7" selection-end-column="11" />
+          <folding>
+            <element signature="e#60#71#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Model/vgg_modules.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="22">
+          <caret line="4" column="35" selection-start-line="4" selection-start-column="24" selection-end-line="4" selection-end-column="35" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/fixedpointTraining.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
-          <caret line="30" selection-start-line="30" selection-end-line="31" selection-end-column="28" />
+        <state relative-caret-position="505">
+          <caret line="207" column="36" lean-forward="true" selection-start-line="207" selection-start-column="36" selection-end-line="207" selection-end-column="36" />
           <folding>
             <element signature="e#0#11#0" expanded="true" />
             <element signature="e#62#193#0" />
             <element signature="e#1217#1281#0" />
             <element signature="e#1320#1367#0" />
             <element signature="e#1350#1367#0" />
-            <element signature="e#2145#2505#1" />
-            <element signature="e#3114#3337#0" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/config.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="110">
-          <caret line="5" lean-forward="true" selection-start-line="5" selection-end-line="5" />
         </state>
       </provider>
     </entry>
