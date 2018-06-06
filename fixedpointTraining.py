@@ -220,3 +220,7 @@ print("\nDirect Fixed Point Accuracy:")
 check_accuracy_part34(loader_test, direct_fix_model)
 print("\nOriginal Floating Point Accuracy:")
 check_accuracy_part34(loader_test, model)
+
+
+torch.save(fix_model.state_dict(), 'fix_model.pt')
+torch.save(direct_fix_model.state_dict(), 'direct_fix_model.pt')
